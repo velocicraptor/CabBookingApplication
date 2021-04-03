@@ -1,7 +1,16 @@
 package com.cg.mts.entities;
 
 import java.time.LocalDateTime;
+import javax.persistence.Entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
 public class TripBooking {
 	private int tripBookingId;
 	private int customerId;
@@ -13,4 +22,7 @@ public class TripBooking {
 	private boolean status;
 	private float distanceInKm;
 	private float bill;
+	
+	
+	
 }
